@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: bsExpress
+Version: 0.4.1b
+Summary: Pipeline to analyze and quality check (ox)Bisulfite libraries
+Home-page: UNKNOWN
+Author: Dario Beraldi
+Author-email: dario.beraldi<at>gmail<dot>com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Requires: argparse

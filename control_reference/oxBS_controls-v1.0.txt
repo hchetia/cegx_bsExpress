@@ -1,0 +1,361 @@
+sequence_name	base_position	base_iupac	base_modified	short_description
+SQ1hmC	4	T	T	
+SQ1hmC	5	A	A	
+SQ1hmC	6	C	1	5mC+
+SQ1hmC	7	G	2	5mC-
+SQ1hmC	8	A	A	
+SQ1hmC	9	T	T	
+SQ1hmC	10	C	C	C+
+SQ1hmC	11	A	A	
+SQ1hmC	12	c	1	5mC+
+SQ1hmC	13	G	G	C-
+SQ1hmC	14	G	2	5mC-
+SQ1hmC	15	C	C	C+
+SQ1hmC	16	G	G	C-
+SQ1hmC	17	A	A	
+SQ1hmC	18	A	A	
+SQ1hmC	19	T	T	
+SQ1hmC	20	C	1	5mC+
+SQ1hmC	21	C	C	C+
+SQ1hmC	22	G	4	5hmC-
+SQ1hmC	23	A	A	
+SQ1hmC	24	T	T	
+SQ1hmC	25	C	1	5mC+
+SQ1hmC	26	G	2	5mC-
+SQ1hmC	27	A	A	
+SQ1hmC	28	A	A	
+SQ1hmC	29	T	T	
+SQ1hmC	30	C	C	C+
+SQ1hmC	31	A	A	
+SQ1hmC	32	C	1	5mC+
+SQ1hmC	33	A	A	
+SQ1hmC	34	G	2	5mC-
+SQ1hmC	35	T	T	
+SQ1hmC	36	G	2	5mC-
+SQ1hmC	37	G	2	5mC-
+SQ1hmC	38	C	C	C+
+SQ1hmC	39	G	G	C-
+SQ1hmC	40	C	1	5mC+
+SQ1hmC	41	T	T	
+SQ1hmC	42	T	T	
+SQ1hmC	43	T	T	
+SQ1hmC	44	A	A	
+SQ1hmC	45	C	3	5hmC+
+SQ1hmC	46	G	2	5mC-
+SQ1hmC	47	A	A	
+SQ1hmC	48	A	A	
+SQ1hmC	49	G	G	C-
+SQ1hmC	50	T	T	
+SQ1hmC	51	G	G	C-
+SQ1hmC	52	C	C	C+
+SQ1hmC	53	G	2	5mC-
+SQ1hmC	54	A	A	
+SQ1hmC	55	C	1	5mC+
+SQ1hmC	56	A	A	
+SQ1hmC	57	G	G	C-
+SQ1hmC	58	C	C	C+
+SQ1hmC	59	C	1	5mC+
+SQ1hmC	60	T	T	
+SQ1hmC	61	T	T	
+SQ1hmC	62	A	A	
+SQ1hmC	63	G	2	5mC-
+SQ3hmC	4	T	T	
+SQ3hmC	5	A	A	
+SQ3hmC	6	C	1	5mC+
+SQ3hmC	7	G	2	5mC-
+SQ3hmC	8	A	A	
+SQ3hmC	9	T	T	
+SQ3hmC	10	C	C	C+
+SQ3hmC	11	A	A	
+SQ3hmC	12	C	1	5mC+
+SQ3hmC	13	G	4	5hmC-
+SQ3hmC	14	G	2	5mC-
+SQ3hmC	15	C	C	C+
+SQ3hmC	16	G	G	C-
+SQ3hmC	17	A	A	
+SQ3hmC	18	A	A	
+SQ3hmC	19	T	T	
+SQ3hmC	20	C	1	5mC+
+SQ3hmC	21	C	3	5hmC+
+SQ3hmC	22	G	4	5hmC-
+SQ3hmC	23	A	A	
+SQ3hmC	24	T	T	
+SQ3hmC	25	C	1	5mC+
+SQ3hmC	26	G	2	5mC-
+SQ3hmC	27	A	A	
+SQ3hmC	28	A	A	
+SQ3hmC	29	T	T	
+SQ3hmC	30	C	C	C+
+SQ3hmC	31	C	1	5mC+
+SQ3hmC	32	T	T	
+SQ3hmC	33	T	T	
+SQ3hmC	34	G	2	5mC-
+SQ3hmC	35	T	T	
+SQ3hmC	36	A	A	
+SQ3hmC	37	G	2	5mC-
+SQ3hmC	38	C	C	C+
+SQ3hmC	39	G	G	C-
+SQ3hmC	40	C	1	5mC+
+SQ3hmC	41	T	T	
+SQ3hmC	42	T	T	
+SQ3hmC	43	T	T	
+SQ3hmC	44	A	A	
+SQ3hmC	45	C	3	5hmC+
+SQ3hmC	46	G	4	5hmC-
+SQ3hmC	47	A	A	
+SQ3hmC	48	A	A	
+SQ3hmC	49	G	G	C-
+SQ3hmC	50	T	T	
+SQ3hmC	51	G	G	C-
+SQ3hmC	52	C	C	C+
+SQ3hmC	53	G	2	5mC-
+SQ3hmC	54	A	A	
+SQ3hmC	55	C	1	5mC+
+SQ3hmC	56	A	A	
+SQ3hmC	57	G	G	C-
+SQ3hmC	58	C	C	C+
+SQ3hmC	59	C	3	5hmC+
+SQ3hmC	60	T	T	
+SQ3hmC	61	T	T	
+SQ3hmC	62	A	A	
+SQ3hmC	63	G	2	5mC-
+SQ6hmC	4	T	T	
+SQ6hmC	5	A	A	
+SQ6hmC	6	C	1	5mC+
+SQ6hmC	7	G	4	5hmC-
+SQ6hmC	8	A	A	
+SQ6hmC	9	T	T	
+SQ6hmC	10	C	C	C+
+SQ6hmC	11	A	A	
+SQ6hmC	12	C	3	5hmC+
+SQ6hmC	13	G	4	5hmC-
+SQ6hmC	14	G	2	5mC-
+SQ6hmC	15	C	C	C+
+SQ6hmC	16	G	G	C-
+SQ6hmC	17	A	A	
+SQ6hmC	18	A	A	
+SQ6hmC	19	T	T	
+SQ6hmC	20	C	3	5hmC+
+SQ6hmC	21	C	3	5hmC+
+SQ6hmC	22	G	4	5hmC-
+SQ6hmC	23	A	A	
+SQ6hmC	24	T	T	
+SQ6hmC	25	C	1	5mC+
+SQ6hmC	26	G	2	5mC-
+SQ6hmC	27	A	A	
+SQ6hmC	28	A	A	
+SQ6hmC	29	T	T	
+SQ6hmC	30	C	C	C+
+SQ6hmC	31	A	A	
+SQ6hmC	32	G	2	5mC-
+SQ6hmC	33	T	T	
+SQ6hmC	34	C	1	5mC+
+SQ6hmC	35	A	A	
+SQ6hmC	36	A	A	
+SQ6hmC	37	G	4	5hmC-
+SQ6hmC	38	C	C	C+
+SQ6hmC	39	G	G	C-
+SQ6hmC	40	C	1	5mC+
+SQ6hmC	41	T	T	
+SQ6hmC	42	T	T	
+SQ6hmC	43	T	T	
+SQ6hmC	44	A	A	
+SQ6hmC	45	C	3	5hmC+
+SQ6hmC	46	G	4	5hmC-
+SQ6hmC	47	A	A	
+SQ6hmC	48	A	A	
+SQ6hmC	49	G	G	C-
+SQ6hmC	50	T	T	
+SQ6hmC	51	G	G	C-
+SQ6hmC	52	C	3	5hmC+
+SQ6hmC	53	G	2	5mC-
+SQ6hmC	54	A	A	
+SQ6hmC	55	C	1	5mC+
+SQ6hmC	56	A	A	
+SQ6hmC	57	G	4	5hmC-
+SQ6hmC	58	C	C	C+
+SQ6hmC	59	C	3	5hmC+
+SQ6hmC	60	T	T	
+SQ6hmC	61	T	T	
+SQ6hmC	62	A	A	
+SQ6hmC	63	G	2	5mC-
+SQC	4	T	T	
+SQC	5	A	A	
+SQC	6	C	C	C+
+SQC	7	G	G	C-
+SQC	8	A	A	
+SQC	9	T	T	
+SQC	10	C	C	C+
+SQC	11	A	A	
+SQC	12	C	C	C+
+SQC	13	G	G	C-
+SQC	14	G	G	C-
+SQC	15	C	C	C+
+SQC	16	G	G	C-
+SQC	17	A	A	
+SQC	18	A	A	
+SQC	19	T	T	
+SQC	20	C	C	C+
+SQC	21	C	C	C+
+SQC	22	G	G	C-
+SQC	23	A	A	
+SQC	24	T	T	
+SQC	25	C	C	C+
+SQC	26	G	G	C-
+SQC	27	A	A	
+SQC	28	A	A	
+SQC	29	T	T	
+SQC	30	C	C	C+
+SQC	31	C	1	5mC+
+SQC	32	A	A	
+SQC	33	G	2	5mC-
+SQC	34	A	A	
+SQC	35	T	T	
+SQC	36	C	1	5mC+
+SQC	37	G	G	C-
+SQC	38	C	C	C+
+SQC	39	G	G	C-
+SQC	40	C	C	C+
+SQC	41	T	T	
+SQC	42	T	T	
+SQC	43	T	T	
+SQC	44	A	A	
+SQC	45	C	C	C+
+SQC	46	G	G	C-
+SQC	47	A	A	
+SQC	48	A	A	
+SQC	49	G	G	C-
+SQC	50	T	T	
+SQC	51	G	G	C-
+SQC	52	C	C	C+
+SQC	53	G	G	C-
+SQC	54	A	A	
+SQC	55	C	C	C+
+SQC	56	A	A	
+SQC	57	G	G	C-
+SQC	58	C	C	C+
+SQC	59	C	C	C+
+SQC	60	T	T	
+SQC	61	T	T	
+SQC	62	A	A	
+SQC	63	G	G	C-
+SQfC	4	T	2	5mC-
+SQfC	5	A	A	
+SQfC	6	C	C	C+
+SQfC	7	G	G	C-
+SQfC	8	A	A	
+SQfC	9	T	T	
+SQfC	10	C	C	C+
+SQfC	11	A	A	
+SQfC	12	C	5	5fC+
+SQfC	13	G	G	C-
+SQfC	14	G	G	C-
+SQfC	15	C	C	C+
+SQfC	16	G	G	C-
+SQfC	17	A	A	
+SQfC	18	A	A	
+SQfC	19	T	T	
+SQfC	20	C	C	C+
+SQfC	21	C	C	C+
+SQfC	22	G	G	C-
+SQfC	23	A	A	
+SQfC	24	T	T	
+SQfC	25	C	C	C+
+SQfC	26	G	G	C-
+SQfC	27	A	A	
+SQfC	28	A	A	
+SQfC	29	T	T	
+SQfC	30	C	C	C+
+SQfC	31	G	2	5mC-
+SQfC	32	T	T	
+SQfC	33	T	T	
+SQfC	34	T	T	
+SQfC	35	5	1	5mC+
+SQfC	36	G	2	5mC-
+SQfC	37	G	G	C-
+SQfC	38	C	C	C+
+SQfC	39	G	G	C-
+SQfC	40	C	C	C+
+SQfC	41	T	T	
+SQfC	42	T	T	
+SQfC	43	T	T	
+SQfC	44	A	A	
+SQfC	45	C	C	C+
+SQfC	46	G	G	C-
+SQfC	47	A	A	
+SQfC	48	A	A	
+SQfC	49	G	G	C-
+SQfC	50	T	T	
+SQfC	51	G	G	C-
+SQfC	52	C	C	C+
+SQfC	53	G	6	5fC-
+SQfC	54	A	A	
+SQfC	55	C	C	C+
+SQfC	56	A	A	
+SQfC	57	G	G	C-
+SQfC	58	C	C	C+
+SQfC	59	C	C	C+
+SQfC	60	T	T	
+SQfC	61	T	T	
+SQfC	62	A	A	
+SQfC	63	G	G	C-
+SQmC	4	T	T	
+SQmC	5	A	A	
+SQmC	6	C	1	5mC+
+SQmC	7	G	2	5mC-
+SQmC	8	A	A	
+SQmC	9	T	T	
+SQmC	10	C	1	5mC+
+SQmC	11	A	A	
+SQmC	12	C	1	5mC+
+SQmC	13	G	2	5mC-
+SQmC	14	G	2	5mC-
+SQmC	15	C	1	5mC+
+SQmC	16	G	2	5mC-
+SQmC	17	A	A	
+SQmC	18	A	A	
+SQmC	19	T	T	
+SQmC	20	C	1	5mC+
+SQmC	21	C	1	5mC+
+SQmC	22	G	2	5mC-
+SQmC	23	A	A	
+SQmC	24	T	T	
+SQmC	25	C	1	5mC+
+SQmC	26	G	2	5mC-
+SQmC	27	A	A	
+SQmC	28	A	A	
+SQmC	29	T	T	
+SQmC	30	C	1	5mC+
+SQmC	31	T	T	
+SQmC	32	A	A	
+SQmC	33	G	2	5mC-
+SQmC	34	C	1	5mC+
+SQmC	35	T	T	
+SQmC	36	T	T	
+SQmC	37	G	2	5mC-
+SQmC	38	C	1	5mC+
+SQmC	39	G	2	5mC-
+SQmC	40	C	1	5mC+
+SQmC	41	T	T	
+SQmC	42	T	T	
+SQmC	43	T	T	
+SQmC	44	A	A	
+SQmC	45	C	1	5mC+
+SQmC	46	G	2	5mC-
+SQmC	47	A	A	
+SQmC	48	A	A	
+SQmC	49	G	2	5mC-
+SQmC	50	T	T	
+SQmC	51	G	2	5mC-
+SQmC	52	C	1	5mC+
+SQmC	53	G	2	5mC-
+SQmC	54	A	A	
+SQmC	55	C	1	5mC+
+SQmC	56	A	A	
+SQmC	57	G	2	5mC-
+SQmC	58	C	1	5mC+
+SQmC	59	C	1	5mC+
+SQmC	60	T	T	
+SQmC	61	T	T	
+SQmC	62	A	A	
+SQmC	63	G	2	5mC-

@@ -1,0 +1,6 @@
+#!/usr/bin/python
+
+from oxbs_qc import oxbs_qc
+
+oxbs_qc.main()
+

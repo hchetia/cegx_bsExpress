@@ -1,0 +1,133 @@
+/Library/Python/2.7/site-packages/oxbs_qc/__init__.py
+/Library/Python/2.7/site-packages/oxbs_qc/cleanReadNames.py
+/Library/Python/2.7/site-packages/oxbs_qc/oxbs_qc.py
+/Library/Python/2.7/site-packages/oxbs_qc/oxbs_qc_func.py
+/Library/Python/2.7/site-packages/oxbs_qc/validate_args.py
+/Library/Python/2.7/site-packages/oxbs_qc/bam2methylation.py
+/Library/Python/2.7/site-packages/oxbs_qc/MarkDuplicates.jar
+/Library/Python/2.7/site-packages/oxbs_qc/ShortenFastq.jar
+/Library/Python/2.7/site-packages/oxbs_qc/CleanReadNames.jar
+/Library/Python/2.7/site-packages/oxbs_qc/bismark
+/Library/Python/2.7/site-packages/oxbs_qc/oxbs_report.R
+/Library/Python/2.7/site-packages/oxbs_qc/trim_galore
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Contaminants/contaminant_list.txt
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/1 Introduction/1.1 What is FastQC.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/2 Basic Operations/2.1 Opening a sequence file.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/2 Basic Operations/2.2 Evaluating Results.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/2 Basic Operations/2.3 Saving a Report.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/1 Basic Statistics.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/10 Overrepresented Sequences.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/11 Overrepresented Kmers.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/2 Per Base Sequence Quality.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/3 Per Sequence Quality Scores.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/4 Per Base Sequence Content.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/5 Per Base GC Content.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/6 Per Sequence GC Content.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/7 Per Base N Content.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/8 Sequence Length Distribution.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/9 Duplicate Sequences.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/duplication_levels.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/kmer_profiles.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/per_base_gc_content.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/per_base_n_content.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/per_base_quality.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/per_base_sequence_content.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/per_sequence_gc_content.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/per_sequence_quality.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Help/3 Analysis Modules/sequence_length_distribution.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/INSTALL.txt
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/LICENSE.txt
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/README.txt
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/RELEASE_NOTES.txt
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Templates/Icons/error.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Templates/Icons/fastqc_icon.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Templates/Icons/tick.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Templates/Icons/warning.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/Templates/header_template.html
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/fastqc
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/fastqc_icon.ico
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/jbzip2-0.9.jar
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/run_fastqc.bat
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/sam-1.32.jar
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Analysis/AnalysisListener.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Analysis/AnalysisQueue.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Analysis/AnalysisRunner.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Analysis/OfflineRunner.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Dialogs/AboutDialog$1.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Dialogs/AboutDialog.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Dialogs/FastQCTitlePanel$SmoothJLabel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Dialogs/FastQCTitlePanel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Dialogs/WelcomePanel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FastQCApplication$1.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FastQCApplication.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FastQCMenuBar.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FileFilters/BAMFileFilter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FileFilters/CasavaFastQFileFilter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FileFilters/FastQFileFilter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FileFilters/GobyFileFilter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FileFilters/MappedBAMFileFilter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/FileFilters/SequenceFileFilter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Graphs/BaseGroup.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Graphs/LineGraph.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Graphs/QualityBoxPlot.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpDialog.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpIndexRoot$FileSorter.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpIndexRoot.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpPage.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpPageDisplay$HelpEditor.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpPageDisplay.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Help/HelpSearchPanel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/BasicStats$ResultsTable.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/BasicStats.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/DuplicationLevel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/GCModel/GCModel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/GCModel/GCModelValue.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/KmerContent$Kmer.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/KmerContent$ResultsTable.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/KmerContent.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/NContent.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/OverRepresentedSeqs$OverrepresentedSeq.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/OverRepresentedSeqs$ResultsTable.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/OverRepresentedSeqs.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/PerBaseGCContent.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/PerBaseQualityScores$QualityCount.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/PerBaseQualityScores.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/PerBaseSequenceContent.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/PerSequenceGCContent.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/PerSequenceQualityScores.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/QCModule.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Modules/SequenceLengthDistribution.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Report/HTMLReportArchive.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Report/stylesheet.txt
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Resources/error.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Resources/fastqc_icon.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Resources/fastqc_icon.svg
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Resources/fastqc_icon_100.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Resources/tick.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Resources/warning.png
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Results/ResultsPanel$ModuleRenderer.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Results/ResultsPanel.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/BAMFile.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/Contaminant/Contaminant.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/Contaminant/ContaminantHit.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/Contaminant/ContaminentFinder.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/FastQFile.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/QualityEncoding/PhredEncoding.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/Sequence.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFactory.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFile.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFileGroup.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFormatException.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Statistics/NormalDistribution.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Statistics/PearsonCorrelation.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Utilities/CasavaBasename.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Utilities/MultiMemberGZIPInputStream.class
+/Library/Python/2.7/site-packages/oxbs_qc/FastQC/uk/ac/babraham/FastQC/Utilities/NameFormatException.class
+/Library/Python/2.7/site-packages/oxbs_qc/__init__.pyc
+/Library/Python/2.7/site-packages/oxbs_qc/cleanReadNames.pyc
+/Library/Python/2.7/site-packages/oxbs_qc/oxbs_qc.pyc
+/Library/Python/2.7/site-packages/oxbs_qc/oxbs_qc_func.pyc
+/Library/Python/2.7/site-packages/oxbs_qc/validate_args.pyc
+/Library/Python/2.7/site-packages/oxbs_qc/bam2methylation.pyc
+/usr/local/bin/bsExpress
+/Library/Python/2.7/site-packages/bsExpress-0.5cegx-py2.7.egg-info
