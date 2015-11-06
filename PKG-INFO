@@ -1,11 +1,11 @@
 Metadata-Version: 1.1
 Name: bsExpress
-Version: 0.4.1b
+Version: 0.5cegx
 Summary: Pipeline to analyze and quality check (ox)Bisulfite libraries
 Home-page: UNKNOWN
-Author: Dario Beraldi
-Author-email: dario.beraldi<at>gmail<dot>com
-License: UNKNOWN
+Author: Dario Beraldi (modified by Russell Hamilton)
+Author-email: bfx@cegx.co.uk
+License: GPL
 Description: UNKNOWN
 Platform: UNKNOWN
 Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
