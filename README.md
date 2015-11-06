@@ -52,7 +52,7 @@ The parameter `--install-scripts` determines where the front-end program `bsExpr
 || 5    || Convert SAM to BAM, sort and index|| `samtools` || `--skip_sam2bam/-Sb`||
 || 6    || Mark duplicate reads^2^ || `MarkDuplicates.jar` || `--mark_duplicates/-Md` ||
 || 7    || Clip overlapping PE reads^3^|| `clipOverlap` || `--skip_clip/-Sc `||
-|| 8    || Call methylation^4^ || `samtools mpileup \| methylation2mpileup.py` || `--skip_mcall/-Sm`||
+|| 8    || Call methylation^4^ || `samtools mpileup &#124; methylation2mpileup.py` || `--skip_mcall/-Sm`||
 || 9    || Report QC on control sequences^5^ || `oxbs_report.R` || `--skip_report/-Sr` ||
 
 
@@ -156,11 +156,11 @@ Graphical representation of the read coverage and percent unconverted C to T at 
 
 Summary of conversions summarized by control sequence (chromosome) and modification. This is a file in tabular format with columns: 
 
-|| chrom     || Control sequence name (_SQ1hmC, SQ3hmC, etc._) ||
-|| mod       || Cytosine modification (_5mC, 5hmC, 5fC, or C_) ||
-|| pct.met   || Percentage unconverted cytosines (as _cnt.met / tot_reads_) ||
-|| cnt.met   || Count of unconverted cytosines ||
-|| tot_reads || Total number of reads ||
+chrom     | Control sequence name (_SQ1hmC, SQ3hmC, etc._) 
+mod       | Cytosine modification (_5mC, 5hmC, 5fC, or C_) 
+pct.met   | Percentage unconverted cytosines (as _cnt.met / tot_reads_) 
+cnt.met   | Count of unconverted cytosines 
+tot_reads | Total number of reads 
 
 #### `*.oxqc.txt` ####
 
