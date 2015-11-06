@@ -2,31 +2,36 @@
 
 # Introduction #
 
-`bsExpress` is a program to perform analysis and quality control of bisulfite (BS-Seq) and oxidised bisulfite (oxBS-Seq) sequencing libraries. 
+`bsExpress` is a program to perform analysis and quality control of bisulfite (BS-Seq) and oxidised bisulfite (oxBS-Seq) sequencing libraries. `bsExpress` is designed to perform quality control of oxBS-Seq libraries using _ad hoc_ control sequences where cytosine modification are known. However, the pipeline is not limited to control sequences but is also suitable for processing (ox)BS-Seq data from raw fastq files to genome-wide methylation calls.
 
-`bsExpress` is designed to perform quality control of oxBS-Seq libraries using _ad hoc_ control sequences where cytosine modification are known. However, the pipeline is not limited to control sequences but is also suitable for processing (ox)BS-Seq data from raw fastq files to genome-wide methylation calls.
+# CEGX customisations from [bsExpress-0.4.1b](https://code.google.com/p/oxbs-sequencing-qc/wiki/bsExpressDoc) #
+1. Updated bismark to version 14.2
+2. Updated trim_galore to version 0.4.0
+3. Modified `bam2methylation.py` to work with SE reads
+4. Modified `oxbs_qc.py` with new bismark, trim_galore and SE options
+5. Modified `oxbs_qc_func.py` with SE options
+6. Modified `validate_args.py` to update `mpile2methylation.py` references to `bam2methylation.py`
 
 # Requirements #
 
 All of the components behind `bsExpress` are freely available. Some of the wrapper scripts and programs ([FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/), [trim_galore](http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/), [bismark](http://www.bioinformatics.babraham.ac.uk/projects/bismark/), [MarkDuplicates](http://picard.sourceforge.net/command-line-overview.shtml#MarkDuplicates)) are shipped with `bsExpress`. Others need to be installed by the user. Currently only Linux/Unix systems are suitable, Windows equipped with a Unix emulator like [Cygwin](http://www.cygwin.com/) should be able to run `bsExpress` although it has not been tested.
 
   * *perl*, *python (2.7)*, *Java 1.6*: Most Linux\Unix systems should have all these components already installed.
-
   * [R](https://www.r-project.org/)
-  
   * [bedtools](http://bedtools.readthedocs.org/en/latest/index.html)
-
   * [cutadapt](http://code.google.com/p/cutadapt/) 
-
   * [samtools](http://samtools.sourceforge.net/) 
-
   * [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) 
-
   * [clipOverlap](http://genome.sph.umich.edu/wiki/BamUtil:_clipOverlap)  _Note_: Only required for paired-end reads
 
 # Installation #
 
-`bsExpress` is a python package installable via [setup.py](http://docs.python.org/2/install/#) . Download `bsExpress` from [http://sourceforge.net/projects/oxbsqc/files/ source forge]. Assuming the archive is in `~/Downloads`, unpack the archive, move inside it and install:
+## Via Docker container ##
+
+In progress
+
+## Via BitBucket code download ##
+`bsExpress` is a python package installable via [setup.py](http://docs.python.org/2/install/#) . Download `bsExpress` from [BitBucket](https://bitbucket.org/russellshamilton/cegx_bsexpress) source forge]. Assuming the archive is in `~/Downloads`, unpack the archive, move inside it and install:
 
 ```
 cd ~/Downloads
@@ -43,20 +48,21 @@ The parameter `--install-scripts` determines where the front-end program `bsExpr
 
 `bsExpress` is effectively a wrapper around several independent tools and analysis steps. The workflow is designed to be flexible and modular so that several entry points are allowed. Below is the the full pipeline:
 
-|| Step || *Description* || *Underlying program* ||  *Option to skip or enable step* || 
-|| 1    || Raw sequence QC || `FastQC` || `--skip_fastqc/-Sf` ||
-|| 2    || Trim adapters and low quality ends || `cutadapt`/`trim_galore` || `--skip_trim/-St` ||
-|| 2.1  || Trim reads from MspI/RRBS libraries || `trim_galore`  || `--rrbs` ||
-|| 3    || Shorten reads^1^ || `ShortenFastq.jar` || `--skip_shorten/-Ss` ||
-|| 4    || Align reads to reference || `bowtie2/bismark` || `--skip_aln/-Sa` ||
-|| 5    || Convert SAM to BAM, sort and index|| `samtools` || `--skip_sam2bam/-Sb`||
-|| 6    || Mark duplicate reads^2^ || `MarkDuplicates.jar` || `--mark_duplicates/-Md` ||
-|| 7    || Clip overlapping PE reads^3^|| `clipOverlap` || `--skip_clip/-Sc `||
-|| 8    || Call methylation^4^ || `samtools mpileup &#124; methylation2mpileup.py` || `--skip_mcall/-Sm`||
-|| 9    || Report QC on control sequences^5^ || `oxbs_report.R` || `--skip_report/-Sr` ||
+| Step | Description                         | Underlying program                               | Option to skip or enable step  
+| :--- | :---------------------------------- | :----------------------------------------------- | :----------------------------
+| 1    | Raw sequence QC                     | `FastQC`                                         | `--skip_fastqc/-Sf` 
+| 2    | Trim adapters and low quality ends  | `cutadapt`/`trim_galore`                         | `--skip_trim/-St` 
+| 2.1  | Trim reads from MspI/RRBS libraries | `trim_galore`                                    | `--rrbs` 
+| 3    | Shorten reads<sup>1</sup>           | `ShortenFastq.jar`                               | `--skip_shorten/-Ss` 
+| 4    | Align reads to reference            | `bowtie2/bismark`                                | `--skip_aln/-Sa` 
+| 5    | Convert SAM to BAM, sort and index  | `samtools`                                       | `--skip_sam2bam/-Sb`
+| 6    | Mark duplicate reads<sup>2</sup>             | `MarkDuplicates.jar`                             | `--mark_duplicates/-Md` 
+| 7    | Clip overlapping PE reads<sup>3</sup>        | `clipOverlap`                                    |  `--skip_clip/-Sc `
+| 8    | Call methylation<sup>4</sup>                 | `samtools mpileup &#124; methylation2mpileup.py` | `--skip_mcall/-Sm`
+| 9    | Report QC on control sequences<sup>5</sup>   | `oxbs_report.R`                                  | `--skip_report/-Sr` 
 
 
-*Notes* *1* Only use this option when reads are longer than the shortest (control) reference minus 2bp. When the reference sequence(s) are considerably longer than the reads disable this step. *2* Skip MarkDuplicates when aligning against the control reference since most if not all of the reads would be marked as duplicate. See note 4 also. *3* Only relevant to paired-end reads. *4* _NB:_ The `mpileup` engine is hard-coded (at least up to version 0.1.18) to skip reads marked as duplicate (see also note 3 and this post on [http://seqanswers.com/forums/showthread.php?t=22752 SEQanswers]). *5* Skip this report when not aligning to control reference sequences. 
+*Notes*: <sup>1</sup> Only use this option when reads are longer than the shortest (control) reference minus 2bp. When the reference sequence(s) are considerably longer than the reads disable this step. <sup>2</sup> Skip MarkDuplicates when aligning against the control reference since most if not all of the reads would be marked as duplicate (See note 4 also). <sup>4</sup> Only relevant to paired-end reads. <sup>4</sup> _NB:_ The `mpileup` engine is hard-coded (at least up to version 0.1.18) to skip reads marked as duplicate (see also note 3 and this post on [SeqAnswers](http://seqanswers.com/forums/showthread.php?t=22752 SEQanswers)). <sup>5</sup> Skip this report when not aligning to control reference sequences. 
 
 # Tutorial #
 
@@ -99,7 +105,7 @@ The order if the description below reflects the order in which the `bsExpress` p
 
 #### `*fastqc.zip` ####
 
-Basic quality control of the raw reads as produced by [http://www.bioinformatics.babraham.ac.uk/projects/fastqc/ FastQC]. Open `fastqc_report.html` inside the unzipped folder for visual inspection. 
+Basic quality control of the raw reads as produced by [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Open `fastqc_report.html` inside the unzipped folder for visual inspection. 
 
 #### `*.trim.fq.gz` & `*.trimming_report.txt` ####
 
@@ -115,11 +121,11 @@ Fastq reads shortened to the length set by `--maxlen`.
 
 #### `*.mdup.bam/.bai` & `*.mdup.metrics.txt` ####
 
-Bam file, sorted and indexed, produced by bismark with duplicate reads marked by `MarkDuplicates`. Duplication metrics are in `*.mdup.metrics.txt`. See also [https://sourceforge.net/apps/mediawiki/picard/index.php?title=Main_Page#Q:_How_does_MarkDuplicates_work.3F FAQs on MarkDuplicates]
+Bam file, sorted and indexed, produced by bismark with duplicate reads marked by `MarkDuplicates`. Duplication metrics are in `*.mdup.metrics.txt`. See also [FAQs on MarkDuplicates](https://sourceforge.net/apps/mediawiki/picard/index.php?title=Main_Page#Q:_How_does_MarkDuplicates_work.3F)
 
 #### `*.clip.bam/.bam.bai` & `*.clipStats` ####
 
-BAM files from previous step with overalapping paired reads clipped to avoid double counting coverage and methylation. Clipping statistics are in `*.clip.Stats`. See also [http://genome.sph.umich.edu/wiki/BamUtil:_clipOverlap clipOverlap].
+BAM files from previous step with overalapping paired reads clipped to avoid double counting coverage and methylation. Clipping statistics are in `*.clip.Stats`. See also [clipOverlap](http://genome.sph.umich.edu/wiki/BamUtil:_clipOverlap clipOverlap).
 
 #### `.mcall.bdg.gz` ####
 
@@ -156,24 +162,28 @@ Graphical representation of the read coverage and percent unconverted C to T at 
 
 Summary of conversions summarized by control sequence (chromosome) and modification. This is a file in tabular format with columns: 
 
-chrom     | Control sequence name (_SQ1hmC, SQ3hmC, etc._) 
-mod       | Cytosine modification (_5mC, 5hmC, 5fC, or C_) 
-pct.met   | Percentage unconverted cytosines (as _cnt.met / tot_reads_) 
-cnt.met   | Count of unconverted cytosines 
-tot_reads | Total number of reads 
+| Field     | Description 
+| :-------- | :----------------------------------------------------------- |
+| chrom     | Control sequence name (_SQ1hmC, SQ3hmC, etc._)               |
+| mod       | Cytosine modification (_5mC, 5hmC, 5fC, or C_)               |
+| pct.met   | Percentage unconverted cytosines (as _cnt.met / tot_reads_)  |
+| cnt.met   | Count of unconverted cytosines                               |
+| tot_reads | Total number of reads                                        |
 
 #### `*.oxqc.txt` ####
 
 File similar in format to `.mcall.bdg.gz` with additional annotation of each position in the control sequences:
 
-|| chrom             || Control sequence name (_SQ1hmC, SQ3hmC, etc._) ||
-|| pos               || Cytosine position ||
-|| pct.met           || Percentage of unconverted cytosines ||
-|| cnt.met           || Count of unconverted cytosines ||
-|| tot_reads         || Total number of reads ||
-|| strand            || + or - for cytosine on forward strand (+) or reverse (-) strand ||
-|| base_iupac        || C or G ||
-|| short_description || Description of modification: _5mC+, 5mC-, 5hmC+, 5hmC-, 5fC+, 5fC-, C+, C-_ ||
+| Field             | Description 
+| :---------------- | :----------------------------------------------------------- 
+| chrom             | Control sequence name (_SQ1hmC, SQ3hmC, etc._) 
+| pos               | Cytosine position 
+| pct.met           | Percentage of unconverted cytosines 
+| cnt.met           | Count of unconverted cytosines 
+| tot_reads         | Total number of reads 
+| strand            | + or - for cytosine on forward strand (+) or reverse (-) strand 
+| base_iupac        | C or G 
+| short_description | Description of modification: _5mC+, 5mC-, 5hmC+, 5hmC-, 5fC+, 5fC-, C+, C-_ 
 
 # Additional notes #
 
