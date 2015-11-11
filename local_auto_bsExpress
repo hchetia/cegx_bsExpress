@@ -1,0 +1,52 @@
+#!/bin/bash
+
+#
+# Get the local machine pwd
+#
+
+currentdir=$(pwd)
+
+
+declare -a filearray=( *R1*.fastq.gz )
+
+for i in "${filearray[@]}"
+do
+        NAME=${i/.fastq.gz/}
+
+        echo "Running bsExpress SQ for ${i}"
+        #docker run -v=$(pwd)/:/Data -it dkr_bsexpress-0.5cegx bsExpress -i /Data/${i} -r /cegx_bsexpress/control_reference/oxBS_controls-v1.0.fa -p $NAME.runqc_SQ --outdir /Data/$NAME.runqc_SQ --maxlen 60 --skip_fastqc 
+        docker run -v=$currentdir:/Data -it cegx_bsexpress_0.5 bsExpress -i /Data/${i} -r /cegx_bsexpress/control_reference/oxBS_controls-v1.0.fa -p $NAME.runqc_SQ --outdir /Data/$NAME.runqc_SQ --maxlen 60 --skip_fastqc
+        #--verbose
+
+        echo "Running bsExpress DC for ${i}"
+        #docker run -v=$(pwd)/:/Data -it dkr_bsexpress-0.5cegx bsExpress -i /Data/${i} -r /cegx_bsexpress/digestion_reference/DC_controls-v1.0.fa -p $NAME.runqc_DC --outdir /Data/$NAME.runqc_DC --maxlen 100 --skip_fastqc 
+        docker run -v=$currentdir:/Data -it cegx_bsexpress_0.5 bsExpress -i /Data/${i} -r /cegx_bsexpress/digestion_reference/DC_controls-v1.0.fa -p $NAME.runqc_DC --outdir /Data/$NAME.runqc_DC --maxlen 100 --skip_fastqc
+        #--verbose
+
+        echo
+        echo
+
+        #
+        # Code below here is just printing out a top level summary
+        #
+        echo "bsExpress Results Summary for ${i}"
+        declare -a controls=( "SQ" "DC" )
+        for j in "${controls[@]}"
+           do
+              echo "${j} controls results being written to $NAME.${j}.bsExpressSummary.txt"
+              echo "${j} controls" > /Data/$NAME.${j}.bsExpressSummary.txt
+        
+              ALLRDS=`grep 'Total reads processed:' /Data/$NAME.runqc_${j}/$NAME.fastq.gz_trimming_report.txt | sed 's/.*://g' | sed 's/,//g' | sed 's/ //g' | sed 's/\t//g'`
+              SEQALN=`grep 'Sequences analysed in total:' /Data/$NAME.runqc_${j}/$NAME.runqc_${j}.R1.short.fq.gz_bismark_bt2_SE_report.txt | sed 's/.*://g' | sed 's/ //g' | sed 's/\t//g'`
+              ALNNUM=`grep 'Number of alignments with a unique best hit from the different alignments:' /Data/$NAME.runqc_${j}/$NAME.runqc_${j}.R1.short.fq.gz_bismark_bt2_SE_report.txt | sed 's/.*://g' | sed 's/ //g' | sed 's/\t//g'`
+              ALNEFF=`grep 'Mapping efficiency:' /Data/$NAME.runqc_${j}/$NAME.runqc_${j}.R1.short.fq.gz_bismark_bt2_SE_report.txt | sed 's/.*://g' | sed 's/ //g' | sed 's/\t//g'`
+
+              echo -e "Num Reads:\t$ALLRDS\tAfter Trim:\t$SEQALN" >> /Data/$NAME.${j}.bsExpressSummary.txt
+              echo -e "chrom\tmod\tpct.met\ttot_reads" >> /Data/$NAME.${j}.bsExpressSummary.txt
+              grep "^all" $NAME.runqc_${j}/$NAME.runqc_${j}.oxqc_summary.txt | sed "s/all/${j}/g" | awk -v alnnum="$ALNNUM" '{print $1,$2,$3,alnnum}' | tr ' ' '\t' >> /Data/$NAME.${j}.bsExpressSummary.txt
+              cat  /Data/$NAME.${j}.bsExpressSummary.txt
+           done
+
+       echo
+done
+
