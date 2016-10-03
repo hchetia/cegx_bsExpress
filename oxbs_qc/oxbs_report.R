@@ -89,6 +89,12 @@ synth_libs$library_id<- rep(unique(bdg$library_id), each= nrow(synth))
 ## Merge to have 0 count positions included
 bdg<- merge(x= bdg, y= synth_libs, by.x= c('chrom', 'pos', 'library_id'), by.y= c('sequence_name', 'base_position', 'library_id'), sort= FALSE, all.y= TRUE)
 
+## CEGX 2016-10-03: Remove SQfC from the summaries and plots
+# Line below keeps fC but turns values into zeroes
+# bdg = subset(bdg, bdg$chrom != 'SQfC')
+# Line below gets rid of fC mention altogether
+bdg = bdg[!(bdg$chrom == 'SQfC'),]
+
 bdg<- bdg[order(bdg$library_id, bdg$chrom, bdg$pos),]
 outf<- paste(prefix, '.oxqc.txt', sep= '')
 write.table(bdg[,c('chrom', 'pos', 'pct.met', 'cnt.met', 'tot_reads', 'strand', 'base_iupac', 'short_description'),], file= outf, sep= '\t', col.names= TRUE, row.names= FALSE, quote= FALSE)
