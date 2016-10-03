@@ -277,7 +277,8 @@ def main():
             """
             print('\n-- Executing trim_galore')
             outFiles= []
-            opts= shlex.split(args.trim_galore_opts) + ['-o', args.outdir] + [' --stringency 13'] +  [' --quality 20'] + [' --three_prime_clip_R1 50']
+            opts= shlex.split(args.trim_galore_opts) + ['-o', args.outdir] + [' --stringency 13']
+            # +  [' --quality 20'] + [' --three_prime_clip_R1 50']
             opts= ' '.join(opts)
             n= 1
             for x in args.input:
