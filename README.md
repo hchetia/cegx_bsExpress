@@ -26,9 +26,13 @@ All of the components behind `bsExpress` are freely available. Some of the wrapp
 
 # Installation #
 
+## Via Ubuntu tar.gz ##
+
+A tar.gz package is provided in the Downloads section with the cegx-bsexpress code and dependencies that will work on a Linux Ubuntu environment.
+
 ## Via Docker container ##
 
-In progress
+(In progress)
 
 ## Via BitBucket code download ##
 `bsExpress` is a python package installable via [setup.py](http://docs.python.org/2/install/#) . Download `bsExpress` from [BitBucket](https://bitbucket.org/russellshamilton/cegx_bsexpress) source forge]. Assuming the archive is in `~/Downloads`, unpack the archive, move inside it and install:
@@ -195,4 +199,4 @@ File similar in format to `.mcall.bdg.gz` with additional annotation of each pos
 
 (This is because python would interpret -l as an additional parameter)
 
-  * The scripts `trim_galore` and `bismark` shipped with `bsExpress` have been edited to replace `zcat` with `gunzip -c` since some MacOS systems do not have `zcat`. 
+  * The scripts `trim_galore` and `bismark` shipped with `bsExpress` have been edited to replace `zcat` with `gunzip -c` since some MacOS systems do not have `zcat`.
