@@ -26,10 +26,9 @@ All of the components behind `bsExpress` are freely available. Some of the wrapp
 
 # Installation #
 
-## Via Ubuntu tar.gz ##
+## Via Ubuntu 14.04 tar.gz ##
 
-A tar.gz package is provided in the Downloads section with the cegx-bsexpress code and dependencies that will work on a Linux Ubuntu environment.
-
+A tar.gz package is provided in the Downloads section with the cegx-bsexpress code and dependencies that will work on a Linux Ubuntu 14.04 environment.
 
 ### Install the dependencies below on a terminal window:
 
@@ -59,7 +58,7 @@ tar xzf ${cegx_bsexpress_version}.tar.gz
 
 ```
 cd $HOME/${cegx_bsexpress_version}/cegx_bsexpress
-python setup.py install --install-scripts $HOME/${cegx_bsexpress_version}/
+sudo python setup.py install --install-scripts $HOME/${cegx_bsexpress_version}/
 cd $HOME
 ```
 
@@ -74,7 +73,7 @@ mkdir -p $HOME/in/reads_fastqgz/
 cp -v /original/location/of/*_R1_*.fastq.gz $HOME/in/reads_fastqgz/
 ```
 
-### Download a copy of run_cegx_bsexpress.pl from cegxtools:
+### Download a copy of run_cegx_bsexpress.pl from cegxtools and make a copy of it in your $HOME/ directory:
 
 http://bitbucket.org/cegx-bfx/cegxtools/downloads/
 
