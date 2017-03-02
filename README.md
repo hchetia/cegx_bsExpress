@@ -82,8 +82,12 @@ http://bitbucket.org/cegx-bfx/cegxtools/downloads/
 
 ```
 suffix=.fastq.gz
-perl $HOME/run_cegx_bsexpress.pl -d $HOME/in/reads_fastqgz/ -suffix $suffix -bsexpress $HOME/${cegx_bsexpress_version}/bsExpress -SQ_controls $HOME/${cegx_bsexpress_version}/cegx_bsexpress/control_reference/oxBS_controls-v1.0.fa -DC_controls $HOME/${cegx_bsexpress_version}/cegx_bsexpress/digestion_reference/DC_controls-v1.0.fa
+perl $HOME/run_cegx_bsexpress.pl -d $HOME/in/reads_fastqgz/ -suffix $suffix \
+ -bsexpress $HOME/${cegx_bsexpress_version}/bsExpress \
+ -SQ_controls $HOME/${cegx_bsexpress_version}/cegx_bsexpress/control_reference/oxBS_controls-v1.0.fa \
+ -DC_controls $HOME/${cegx_bsexpress_version}/cegx_bsexpress/digestion_reference/DC_controls-v1.0.fa
 ```
+
 
 ## Via Docker container ##
 
