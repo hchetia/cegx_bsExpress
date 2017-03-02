@@ -30,8 +30,10 @@ All of the components behind `bsExpress` are freely available. Some of the wrapp
 
 A tar.gz package is provided in the Downloads section with the cegx-bsexpress code and dependencies that will work on a Linux Ubuntu environment.
 
+
 ### Install the dependencies below on a terminal window:
 
+```
 sudo apt-get install wget
 sudo apt-get install make
 sudo apt-get install build-essential
@@ -45,23 +47,32 @@ sudo apt-get install bedtools
 sudo apt-get install r-base
 sudo apt-get install python-pip
 sudo pip install cutadapt==1.11
+```
 
 ### Install with the instructions below on a terminal window:
 
+```
 cd $HOME
 cegx_bsexpress_version="cegx-bsexpress-ubuntu-14.04.4"
 tar xzf ${cegx_bsexpress_version}.tar.gz
+```
 
+```
 cd $HOME/${cegx_bsexpress_version}/cegx_bsexpress
 python setup.py install --install-scripts $HOME/${cegx_bsexpress_version}/
 cd $HOME
+```
 
+```
 $HOME/${cegx_bsexpress_version}/bsExpress --help
+```
 
 ### Place your _R1_ fastq.gz reads in this directory:
 
+```
 mkdir -p $HOME/in/reads_fastqgz/
 cp -v /original/location/of/*_R1_*.fastq.gz $HOME/in/reads_fastqgz/
+```
 
 ### Download a copy of run_cegx_bsexpress.pl from cegxtools:
 
@@ -69,8 +80,10 @@ http://bitbucket.org/cegx-bfx/cegxtools/downloads/
 
 ### Now run using the run_cegx_bsexpress.pl script:
 
+```
 suffix=.fastq.gz
 perl $HOME/run_cegx_bsexpress.pl -d $HOME/in/reads_fastqgz/ -suffix $suffix -bsexpress $HOME/${cegx_bsexpress_version}/bsExpress -SQ_controls $HOME/${cegx_bsexpress_version}/cegx_bsexpress/control_reference/oxBS_controls-v1.0.fa -DC_controls $HOME/${cegx_bsexpress_version}/cegx_bsexpress/digestion_reference/DC_controls-v1.0.fa
+```
 
 ## Via Docker container ##
 
