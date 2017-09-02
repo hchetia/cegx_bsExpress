@@ -20,7 +20,7 @@ All of the components behind `bsExpress` are freely available. Some of the wrapp
   * [R](https://www.r-project.org/)
   * [bedtools](http://bedtools.readthedocs.org/en/latest/index.html)
   * [cutadapt](http://code.google.com/p/cutadapt/) 
-  * [samtools](http://samtools.sourceforge.net/) 
+  * [samtools](http://samtools.sourceforge.net/) (version 0.1.18+ but older than 1.0)
   * [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) 
   * [clipOverlap](http://genome.sph.umich.edu/wiki/BamUtil:_clipOverlap)  _Note_: Only required for paired-end reads
 
