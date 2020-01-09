@@ -75,7 +75,7 @@ cp -v /original/location/of/*_R1_*.fastq.gz $HOME/in/reads_fastqgz/
 
 ### Download a copy of run_cegx_bsexpress.pl from cegxtools and make a copy of it in your $HOME/ directory:
 
-http://bitbucket.org/cegx-bfx/cegxtools/downloads/
+https://github.com/cegx-ds/cegxtools
 
 ### Now run using the run_cegx_bsexpress.pl script:
 
